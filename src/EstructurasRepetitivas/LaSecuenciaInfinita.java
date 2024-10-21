@@ -2,7 +2,7 @@ package EstructurasRepetitivas;
 
 import java.util.Scanner;
 
-public class Main {
+public class LaSecuenciaInfinita {
 
     public static void main(String[] args) {
 
@@ -34,3 +34,5 @@ public class Main {
             ++contador;
         }
     }}
+
+
