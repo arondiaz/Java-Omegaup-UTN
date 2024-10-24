@@ -3,34 +3,26 @@ package EstructurasRepetitivas;
 import java.util.Scanner;
 
 public class Main {
-
     public static void main(String[] args) {
 
         Scanner consola = new Scanner(System.in);
-        boolean direccion = true;
-        int largo = consola.nextInt();
-        String acumulador = "";
-        int contador = 0;
-        int i = 1;
 
-        while(!(contador == largo)){
-            if(direccion ){
-                acumulador = (i + " ");
-                System.out.print(acumulador);
-                ++i;
+        int N = consola.nextInt();
 
-                if(i == 5){
-                    direccion = false;
-                }
+        //bucle para recorrer todas las filas
+        for(int f = 0; f < N; f++){
 
-            } else if(!direccion){
-                acumulador = (i + " ");
-                System.out.print(acumulador);
-                --i;
-                if(i == 1){
-                    direccion = true;
-                }
+            //bucle para espacios
+            for(int e = 0; e < (N - f - 1); e++ ){
+                System.out.print(" ");
             }
-            ++contador;
+
+            //bucle para asteriscos
+            for (int a = 0; a < (f * 2) + 1; a++){
+                System.out.print("*");
+            }
+
+            System.out.println();
         }
-    }}
+    }
+}
