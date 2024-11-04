@@ -2,7 +2,7 @@ package EstructurasRepetitivas;
 
 import java.util.Scanner;
 
-public class Main {
+public class MinimoMaximoPromedio {
     public static void main(String[] args) {
 
         Scanner consola = new Scanner(System.in);

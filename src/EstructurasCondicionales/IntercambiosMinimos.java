@@ -14,13 +14,14 @@ public class IntercambiosMinimos {
         int n2 = consola.nextInt();
         int n3 = consola.nextInt();
 
-        if(n1 > MIN && n1 < MAX && n2 > MIN && n2 < MAX && n3 > MIN && n3 < MAX ){
-            if(n1 < n2 && n2 < n3){
+        if(n1 >= MIN && n1 <= MAX && n2 >= MIN && n2 <= MAX && n3 >= MIN && n3 <= MAX ){
+            if(n1 <= n2 && n2 <= n3){
                 System.out.println(0);
-            }else{
+            }else if(n1 <= n3 && n1 >= n2 || n3 <= n2 && n1 <= n3 || n1 >= n2 && n2 >= n3){
                 System.out.println(1);
+            }else{
+                System.out.println(2);
             }
         }
-
     }
 }
