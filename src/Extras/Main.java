@@ -7,14 +7,15 @@ public class Main {
 
         Scanner scanner = new Scanner(System.in);
 
-        int a = scanner.nextInt();
-        int b = scanner.nextInt();
-        int c = scanner.nextInt();
-        int n = 0;
+        long a = scanner.nextLong();
+        long b = scanner.nextLong();
+        long c = scanner.nextLong();
+        long n = 0;
 
+        long max = 1000000000000000L;
 
-        if(a <= b && c <= b && a >= 0 && c >= 0 && b <= 1000000000000000L){
-            for(int i = a; i <= b; i++){
+        if (a >= 0  && c <= b && b <= max) {
+            for(long i = a; i <= b; i++){
                 if(i % c == 0){
                     n++;
                 }
