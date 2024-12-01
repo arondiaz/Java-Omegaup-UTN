@@ -2,8 +2,8 @@ package TrabajoPractico;
 import java.util.Scanner;
 
 public class Main {
-    public static double calcularPuntuacionGeneral ( double p, double c, int n){
-        double puntuacionGeneral = (0.5 * (100/p)) + (0.3 * c) + (0.2 * Math.log10(n + 1));
+    public static double calcularPuntuacionGeneral ( double p, double cp, int nr){
+        double puntuacionGeneral = (0.5 * (100/p)) + (0.3 * cp) + (0.2 * Math.log10(nr + 1));
         return puntuacionGeneral;
     }
 
@@ -26,7 +26,6 @@ public class Main {
         }
         System.out.println(mejorGimnasio);
     }
-
 }
 
 
